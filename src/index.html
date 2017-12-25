@@ -1,35 +1,487 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-	<link rel="shortcut icon" href="upload/favicon.png" type="image/png">
-	<link rel="stylesheet" href="template/styles/css/style.css" />
-	<link rel="stylesheet" href="template/styles/css/responsive.css" />
-	<script src="template/scripts/libs.js"></script>
-	<script src="template/scripts/common.js"></script>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Portal Template</title>
+	<meta name="generator" content="Bootply" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!--[if lt IE 9]>
-	<script>
-		document.createElement('header');
-		document.createElement('nav');
-		document.createElement('main');
-		document.createElement('section');
-		document.createElement('article');
-		document.createElement('aside');
-		document.createElement('footer');
-	</script>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
-		
-	</header>
-	<main class="main">
-		
-	</main>
-	<footer class="footer">
-		
-	</footer>
+	<div class="container-fluid">
+		 <div class="row header">
+				<div class="col-lg-3 col-xs-12 hidden-md hidden-sm hidden-xs header-links"><a href="#">Контакты</a> <a href="#">Реклама на сайте</a></div>
+				<div class="col-lg-3 hidden-lg header-links"><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Вход</a> <a href="#">Регистрация</a></div>
+				<div class="col-lg-6 col-xs-12 header-banner"><img src="images/samples/banner01.jpg"></div>
+				<div class="col-lg-3 col-xs-12 logo"><a href=""><img src="images/logo.png" alt="Привет, Париж! Русский портал во Франции."></a><div class="mobile-btn hidden-lg hidden-md"><span></span><span></span><span></span></div></div>
+		 </div>
+	</div>
+	<nav class="navbar navbar-default" role="navigation">
+		 <div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					 <li><a href="#">Афиша</a></li>
+					 <li><a href="#">Гид по Парижу</a></li>
+					 <li><a href="#">Каталог фирм и услуг</a></li>
+					 <li><a href="#">Доска объявлений</a></li>
+					 <li><a href="#">Знакомства</a></li>
+					 <li><a href="#">Новости</a></li>
+				</ul>
+				<div class="col-sm-3 col-md-3 hidden-md hidden-sm hidden-xs pull-right">
+					 <div class="nav-dop">        
+							<a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Вход</a> <a href="#">Регистрация</a>
+					 </div>
+				</div>
+		 </div>
+	</nav>
+	<!-- login popup -->
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		 <div class="modal-dialog modal-sm">
+				<div class="modal-content modal-login">
+					 <div class="wrapper">
+							<form class="form-signin">
+								 <p class="form-signin-heading">Вход в личный кабинет</p>
+								 <input type="text" class="form-control mar-b-20" name="username" placeholder="Email" required="" autofocus="" />
+								 <input type="password" class="form-control" name="password" placeholder="Пароль" required=""/>      
+								 <label class="checkbox">
+								 <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Запомнить 
+								 </label>
+								 <button class="btn btn-md btn-primary btn-block" type="submit">Войти</button> 
+							</form>
+							<div class="pad-t-20"><a href="#">Вспомнить пароль</a></div>
+					 </div>
+				</div>
+		 </div>
+	</div>
+	<!-- login popup end -->
+	<div class="container-fluid content">
+		 <!--left-->
+		 <div class="col-lg-2 col-md-3 col-left hidden-sm hidden-xs">
+				<div class="center-block centered pad-b-20"><img src="images/samples/banner02.jpg"></div>
+				<div class="panel panel-default no-borders">
+					 <div class="panel-heading blue-head">Информация</div>
+					 <div class="panel-body blue-body">
+							<ul class="menu-list">
+								 <li><a href="#">Карта Парижа</a></li>
+								 <li><a href="#">Славься Париж</a></li>
+								 <li><a href="#">Районы Парижа</a></li>
+								 <li><a href="#">Пригороды Парижа</a></li>
+								 <li><a href="#">Транспорт в Париже</a></li>
+								 <li><a href="#">Аэропорты Парижа</a></li>
+								 <li><a href="#">Практические советы</a></li>
+								 <li><a href="#">Гиды и переводчики</a></li>
+								 <li><a href="#">Транспортные услуги</a></li>
+								 <li><a href="#">Аренда квартир во Франции</a></li>
+								 <li><a href="#">Кулинарные рецепты</a></li>
+							</ul>
+					 </div>
+				</div>
+				<div class="center-block centered pad-b-20"><img src="images/samples/banner03.jpg"></div>
+				<div class="panel panel-default no-borders">
+					 <div class="panel-heading blue-head">Достопримечательности</div>
+					 <div class="panel-body blue-body">
+					 		<div class="places">
+					 			<div class="places__item">
+					 				<div class="places__img"><img src="images/samples/photo1.jpg" alt=""></div>
+					 				<div class="places__text">Парижский Лувр</div>
+					 			</div>
+					 			<div class="places__item">
+					 				<div class="places__img"><img src="images/samples/photo2.jpg" alt=""></div>
+					 				<div class="places__text">Собор Парижской Богоматери</div>
+					 			</div>
+					 		</div>
+							<ul class="menu-list">
+								 <li><a href="#">Стоит посмотреть</a></li>
+								 <li><a href="#">Музеи</a></li>
+								 <li><a href="#">Сады и парки</a></li>
+								 <li><a href="#">Соборы Парижа</a></li>
+								 <li><a href="#">Знаменитые кварталы</a></li>
+								 <li><a href="#">Фото прогулки</a></li>
+							</ul>
+					 </div>
+				</div>
+		 </div>
+		 <!--/left-->
+
+		 <!--center-->
+		 <div class="col-lg-8 col-md-6 col-center">
+
+		 		<!-- Afisha -->
+		 		<div class="afisha section section_zero">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="afisha__item clearfix" style="background-image: url('images/bg/blure-1.png')">
+								<div class="afisha__content">
+									<div class="afisha__label"><span>Афиша</span></div>
+									<div class="afisha__date">14, 15 октября 2017</div>
+									<div class="afisha__title">КАРМЕН-СЮИТА</div>
+									<div class="afisha__text">
+										<p>Ассоциация лингварик при поддержке Агенства open art представляет</p>
+										<p>Гала-концерт с участием солистов Мариинского и Михайловского театров</p>
+										<p>Посвящается Майе Плисецкой</p>
+									</div>
+								</div>
+								<div class="afisha__img"><img src="images/samples/afisha/1.png" alt=""></div>
+								<div class="afisha__mask"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="afisha__item clearfix" style="background-image: url('images/bg/blure-2.png')">
+								<div class="afisha__content">
+									<div class="afisha__label"><span>Афиша</span></div>
+									<div class="afisha__date">21 сентября 2017</div>
+									<div class="afisha__title">КОНЦЕРТ 55 летию ВИКТОРА ЦОЯ !</div>
+									<div class="afisha__text">
+										<p>VLADIMIR EVENTS и Юрий БЕЛИШКИН Представляют !</p>
+										<p>«Я хотел бы остаться с тобой!»<br>LIVE-ROCK КОНЦЕРТ<br>Посвящённый 55 летию ВИКТОРА ЦОЯ ! <br>Лидера группы «КИНО»</p>
+									</div>
+								</div>
+								<div class="afisha__img"><img src="images/samples/afisha/2.png" alt=""></div>
+								<div class="afisha__mask"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Afisha -->
+				
+				<!-- Bulletin board -->
+				<div class="board board_count section">
+					<div class="board__head row">
+						<div class="board__col col-xs-12">
+							<div class="board__title section__title">Доска объявлений</div>
+							<a href="" class="board__button button button_yellow">Подать объявление</a>
+						</div>
+					</div>
+					<div class="board__body row">
+						<div class="board__col col-lg-4 col-sm-6 col-xs-12">
+							<div class="board__item">
+								<div class="board__subtitle">Работа</div>
+								<div class="board__list menu-list">
+									<ul>
+										<li><a href="">Предлагаю работу <span class="color-gray">(42)</span></a></li>
+										<li><a href="">Ищу работу (вакансию) <span class="color-gray">(11)</span></a></li>
+										<li><a href="">Другое <span class="color-gray">(0)</span></a></li>
+										<li><a href="">Сетевой маркетинг и. т. п. <span class="color-gray">(1)</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="board__item">
+								<div class="board__subtitle">Услуги</div>
+								<div class="board__list menu-list">
+									<ul>
+										<li><a href="">Переводы, переводчики <span class="color-gray">(9)</span></a></li>
+										<li><a href="">Строительство и ремонт <span class="color-gray">(29)</span></a></li>
+										<li><a href="">Консультации <span class="color-gray">(6)</span></a></li>
+										<li><a href="">Транспортные <span class="color-gray">(20)</span></a></li>
+										<li><a href="">Компьютеры, интернет <span class="color-gray">(11)</span></a></li>
+										<li><a href="">Даем уроки <span class="color-gray">(14)</span></a></li>
+										<li><a href="">Другое <span class="color-gray">(16)</span></a></li>
+										<li><a href="">Фотография <span class="color-gray">(6)</span></a></li>
+										<li><a href="">Гиды, экскурсии <span class="color-gray">(4)</span></a></li>
+										<li><a href="">Парикмахерские <span class="color-gray">(13)</span></a></li>
+										<li><a href="">Здоровье и красота <span class="color-gray">(17)</span></a></li>
+										<li><a href="">Кулинарные <span class="color-gray">(6)</span></a></li>
+										<li><a href="">Праздники, мероприятия <span class="color-gray">(3)</span></a></li>
+										<li><a href="">Эзотерика <span class="color-gray">(1)</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="board__item">
+								<div class="board__subtitle">Афиша событий</div>
+								<div class="board__list menu-list">
+									<ul>
+										<li><a href="">Вечера, концерты, дискотеки <span class="color-gray">(0)</span></a></li>
+										<li><a href="">Фестивали, выставки <span class="color-gray">(0)</span></a></li>
+										<li><a href="">Для детей <span class="color-gray">(0)</span></a></li>
+										<li><a href="">Предлагаю встретиться <span class="color-gray">(0)</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="board__col col-lg-8 col-sm-6 col-xs-12">
+							<div class="board__item">
+								<div class="board__subtitle">Недвижимость</div>
+								<div class="board__list menu-list">
+									<ul>
+										<li><a href="">Продаю <span class="color-gray">(1)</span></a></li>
+										<li><a href="">Куплю <span class="color-gray">(0)</span></a></li>
+										<li><a href="">Сдам <span class="color-gray">(96)</span></a></li>
+										<li><a href="">Сниму <span class="color-gray">(22)</span></a></li>
+										<li><a href="">Услуги агентов по недвижимости <span class="color-gray">(1)</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="board__item">
+								<div class="board__subtitle">Куплю - Продам</div>
+								<div class="board__list menu-list">
+									<ul>
+										<li><a href="">Разное <span class="color-gray">(46)</span></a></li>
+										<li><a href="">Мебель <span class="color-gray">(4)</span></a></li>
+										<li><a href="">Бытовая техника <span class="color-gray">(3)</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="board__item">
+								<div class="board__subtitle">Автотранспорт</div>
+								<div class="board__list menu-list">
+									<ul>
+										<li><a href="">Куплю <span class="color-gray">(0)</span></a></li>
+										<li><a href="">Продам <span class="color-gray">(5)</span></a></li>
+										<li><a href="">Ремонт <span class="color-gray">(2)</span></a></li>
+										<li><a href="">Разное <span class="color-gray">(1)</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="board__item">
+								<div class="board__subtitle">Животные</div>
+								<div class="board__list menu-list">
+									<ul>
+										<li><a href="">Разное <span class="color-gray">(0)</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="board__counts hidden-md">
+								<p>Cвежих объявлений: 348</p>
+								<p>Всего просмотров: 35160</p>
+							</div>
+						</div>
+					</div>
+					<div class="ads ads-board"><img src="images/samples/ads/1.png" alt=""></div>
+				</div>
+				<!-- /Bulletin board -->
+					
+				<!-- Catalog board -->
+				<div class="board board_folder section">
+					<div class="board__head row">
+						<div class="board__col col-xs-12">
+							<div class="board__title section__title">Каталог фирм и услуг</div>
+							<a href="" class="board__button button button_yellow">Добавить фирму</a>
+						</div>
+					</div>
+					<div class="board__body row">
+						<div class="board__col col-md-6">
+							<div class="board__item">
+								<div class="board__list menu-list">
+									<ul>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Туризм, экскурсии, гиды, водители.</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Русские магазины</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Архитектура, строительство, ремонт</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Культура и искусство</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Обучение, русские школы</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Дизайн, фотография</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Книги, библиотеки</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Компьютер, интернет, телевидение</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="board__col col-md-6">
+							<div class="board__item">
+								<div class="board__list menu-list">
+									<ul>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Логистика, транспорт, таможня</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Эзотерика</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Охрана</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Aвтомобили, мотоциклы</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Здоровье и красота</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Работа, подбор персонала</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Праздники, концерты, вечера</a></li>
+										<li><img src="images/icons/folder.png" class="icon icon-folder"><a href="">Юридические и бухгалтерские услуги</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ads ads-catalog"><img src="images/samples/ads/2.png" alt=""></div>
+				</div>
+				<!-- /Catalog board -->
+
+				<!-- Mobile show -->
+				<div class="col-lg-2 col-md-3 col-right hidden-lg hidden-md">
+					<div class="center-block centered pad-b-20"><img src="images/samples/banner03.jpg"></div>
+					<div class="catalog">
+						<div class="catalog__title">Каталог фирм и услуг</div>
+						<div class="catalog__item">
+							<div class="catalog__subtitle"><a href="">Стоматологическая клиника Lige</a></div>
+							<div class="catalog__img"><img src="images/samples/catalog/1.png" alt=""></div>
+							<div class="catalog__text">Стоматологическое лечение и челюстно-лицевая хирургия в Венгрии</div>
+						</div>
+						<div class="catalog__item">
+							<div class="catalog__subtitle"><a href="">Присяжный переводчик</a></div>
+							<div class="catalog__img"><img src="images/samples/catalog/2.png" alt=""></div>
+							<div class="catalog__text">Заверенные переводы документов присяжным переводчиком.</div>
+						</div>
+						<div class="catalog__item">
+							<div class="catalog__subtitle"><a href="">Автосервис Autoplus4x4 </a></div>
+							<div class="catalog__img"><img src="images/samples/catalog/3.png" alt=""></div>
+							<div class="catalog__text">Ремонт и техническое обслуживание автомобилей любых марок.</div>
+						</div>
+						<div class="catalog__item">
+							<div class="catalog__subtitle"><a href="">Стоматологическая клиника Lige </a></div>
+							<div class="catalog__img"><img src="images/samples/catalog/4.png" alt=""></div>
+							<div class="catalog__text">Стоматологическое лечение и челюстно-лицевая хирургия в Венгрии</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-left hidden-lg hidden-md">
+					<div class="center-block centered pad-b-20"><img src="images/samples/banner02.jpg"></div>
+					<div class="panel panel-default no-borders">
+						 <div class="panel-heading blue-head">Информация</div>
+						 <div class="panel-body blue-body">
+								<ul class="menu-list">
+									 <li><a href="#">Карта Парижа</a></li>
+									 <li><a href="#">Славься Париж</a></li>
+									 <li><a href="#">Районы Парижа</a></li>
+									 <li><a href="#">Пригороды Парижа</a></li>
+									 <li><a href="#">Транспорт в Париже</a></li>
+									 <li><a href="#">Аэропорты Парижа</a></li>
+									 <li><a href="#">Практические советы</a></li>
+									 <li><a href="#">Гиды и переводчики</a></li>
+									 <li><a href="#">Транспортные услуги</a></li>
+									 <li><a href="#">Аренда квартир во Франции</a></li>
+									 <li><a href="#">Кулинарные рецепты</a></li>
+								</ul>
+						 </div>
+					</div>
+					<div class="center-block centered pad-b-20"><img src="images/samples/banner03.jpg"></div>
+					<div class="panel panel-default no-borders">
+						 <div class="panel-heading blue-head">Достопримечательности</div>
+						 <div class="panel-body blue-body">
+						 		<div class="places">
+						 			<div class="places__item">
+						 				<div class="places__img"><img src="images/samples/photo1.jpg" alt=""></div>
+						 				<div class="places__text">Парижский Лувр</div>
+						 			</div>
+						 			<div class="places__item">
+						 				<div class="places__img"><img src="images/samples/photo2.jpg" alt=""></div>
+						 				<div class="places__text">Собор Парижской Богоматери</div>
+						 			</div>
+						 		</div>
+								<ul class="menu-list">
+									 <li><a href="#">Стоит посмотреть</a></li>
+									 <li><a href="#">Музеи</a></li>
+									 <li><a href="#">Сады и парки</a></li>
+									 <li><a href="#">Соборы Парижа</a></li>
+									 <li><a href="#">Знаменитые кварталы</a></li>
+									 <li><a href="#">Фото прогулки</a></li>
+								</ul>
+						 </div>
+					</div>
+				</div>
+				<!-- /Mobile show -->
+	
+				<!-- News -->
+				<div class="news section">
+					<div class="news__head row">
+						<div class="news__title section__title col-xs-12">Интернет-обзор новостей: Париж и Франция</div>
+					</div>
+					<div class="news__body row">
+						<div class="news__item col-xs-12">
+							<div class="news__date">14.10.2017 10:15</div>
+							<div class="news__subtitle"><a href="">Во Франции разведчик случайно слил данные о слежке экстремисту</a></div>
+							<div class="news__text">Во Франции сотрудник Центральной службы территориальной разведки (SCRT) по ошибке переслал все данные по слежке за имамом, подозреваемом в экстремизме, самому объекту наблюдения. В результате, слежку за подозреваемым пришлось прекратить сразу нескольким спецслужбам.</div>
+						</div>
+						<div class="news__item col-xs-12">
+							<div class="news__date">14.10.2017 10:15</div>
+							<div class="news__subtitle"><a href="">Во Франции разведчик случайно слил данные о слежке экстремисту</a></div>
+							<div class="news__text">Во Франции сотрудник Центральной службы территориальной разведки (SCRT) по ошибке переслал все данные по слежке за имамом, подозреваемом в экстремизме, самому объекту наблюдения. В результате, слежку за подозреваемым пришлось прекратить сразу нескольким спецслужбам.</div>
+						</div>
+						<div class="news__item col-xs-12">
+							<div class="news__date">14.10.2017 10:15</div>
+							<div class="news__subtitle"><a href="">Во Франции разведчик случайно слил данные о слежке экстремисту</a></div>
+							<div class="news__text">Во Франции сотрудник Центральной службы территориальной разведки (SCRT) по ошибке переслал все данные по слежке за имамом, подозреваемом в экстремизме, самому объекту наблюдения. В результате, слежку за подозреваемым пришлось прекратить сразу нескольким спецслужбам.</div>
+						</div>
+						<div class="news__item col-xs-12">
+							<div class="news__date">14.10.2017 10:15</div>
+							<div class="news__subtitle"><a href="">Во Франции разведчик случайно слил данные о слежке экстремисту</a></div>
+							<div class="news__text">Во Франции сотрудник Центральной службы территориальной разведки (SCRT) по ошибке переслал все данные по слежке за имамом, подозреваемом в экстремизме, самому объекту наблюдения. В результате, слежку за подозреваемым пришлось прекратить сразу нескольким спецслужбам.</div>
+						</div>
+					</div>
+				</div>
+				<!-- /News -->
+
+		 </div>
+		 <!--/center-->
+
+		 <!--right-->
+		 <div class="col-lg-2 col-md-3 col-right hidden-sm hidden-xs">
+				<div class="center-block centered pad-b-20"><img src="images/samples/banner03.jpg"></div>
+				<div class="catalog">
+					<div class="catalog__title">Каталог фирм и услуг</div>
+					<div class="catalog__item">
+						<div class="catalog__subtitle"><a href="">Стоматологическая клиника Lige</a></div>
+						<div class="catalog__img"><img src="images/samples/catalog/1.png" alt=""></div>
+						<div class="catalog__text">Стоматологическое лечение и челюстно-лицевая хирургия в Венгрии</div>
+					</div>
+					<div class="catalog__item">
+						<div class="catalog__subtitle"><a href="">Присяжный переводчик</a></div>
+						<div class="catalog__img"><img src="images/samples/catalog/2.png" alt=""></div>
+						<div class="catalog__text">Заверенные переводы документов присяжным переводчиком.</div>
+					</div>
+					<div class="catalog__item">
+						<div class="catalog__subtitle"><a href="">Автосервис Autoplus4x4 </a></div>
+						<div class="catalog__img"><img src="images/samples/catalog/3.png" alt=""></div>
+						<div class="catalog__text">Ремонт и техническое обслуживание автомобилей любых марок.</div>
+					</div>
+					<div class="catalog__item">
+						<div class="catalog__subtitle"><a href="">Стоматологическая клиника Lige </a></div>
+						<div class="catalog__img"><img src="images/samples/catalog/4.png" alt=""></div>
+						<div class="catalog__text">Стоматологическое лечение и челюстно-лицевая хирургия в Венгрии</div>
+					</div>
+				</div>
+		 </div>
+		 <!--/right-->
+	</div>
+	<!--/container-fluid-->
+
+	<!-- footer -->
+	<div class="footer container-fluid">
+		<div class="footer__nav footer__nav_show nav-line">
+			<ul>
+				<li><a href="">Пользовательское соглашение</a></li>
+				<li><a href="">Афиша</a></li>
+				<li><a href="">Новости</a></li>
+				<li><a href="">Гид по Парижу</a></li>
+				<li><a href="">Доска объявлений</a></li>
+				<li><a href="">Каталог фирм и услуг</a></li>
+				<li><a href="">Форумы</a></li>
+				<li><a href="">Русские во Франции</a></li>
+				<li><a href="">Реклама на сайте</a></li>
+			</ul>
+		</div>
+		<div class="footer__nav footer__nav_hidden hidden-lg hidden-md hidden-sm">
+			<ul>
+				<li><a href="">Пользовательское соглашение</a></li>
+				<li><a href="">Реклама на сайте</a></li>
+			</ul>
+		</div>
+		<div class="footer__text">
+			<p>© "Привет, Париж!" 2001-2016</p>
+			<p>Русские в Париже и Франции, информация, общение, развлечения, чат, форум, знакомства!</p>
+		</div>
+		<div class="footer__counts nav-line">
+			<ul>
+				<li><a href="#"><img src="images/samples/counters/1.png" alt=""></a></li>
+				<li><a href="#"><img src="images/samples/counters/2.png" alt=""></a></li>
+				<li><a href="#"><img src="images/samples/counters/3.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+	<!-- script references -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$('.mobile-btn').click(function(event) {
+			$(this).toggleClass('mobile-btn_toggle');
+			$('.navbar-nav').slideToggle(300);
+		});
+	</script>
 </body>
 </html>
