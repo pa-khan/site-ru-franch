@@ -11,8 +11,7 @@
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link href="css/styles.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/desktop.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container-fluid">
@@ -301,80 +300,6 @@
 					<div class="ads ads-catalog"><img src="images/samples/ads/2.png" alt=""></div>
 				</div>
 				<!-- /Catalog board -->
-
-				<!-- Mobile show -->
-				<div class="col-lg-2 col-md-3 col-right hidden-lg hidden-md">
-					<div class="center-block centered pad-b-20"><img src="images/samples/banner03.jpg"></div>
-					<div class="catalog">
-						<div class="catalog__title">Каталог фирм и услуг</div>
-						<div class="catalog__item">
-							<div class="catalog__subtitle"><a href="">Стоматологическая клиника Lige</a></div>
-							<div class="catalog__img"><img src="images/samples/catalog/1.png" alt=""></div>
-							<div class="catalog__text">Стоматологическое лечение и челюстно-лицевая хирургия в Венгрии</div>
-						</div>
-						<div class="catalog__item">
-							<div class="catalog__subtitle"><a href="">Присяжный переводчик</a></div>
-							<div class="catalog__img"><img src="images/samples/catalog/2.png" alt=""></div>
-							<div class="catalog__text">Заверенные переводы документов присяжным переводчиком.</div>
-						</div>
-						<div class="catalog__item">
-							<div class="catalog__subtitle"><a href="">Автосервис Autoplus4x4 </a></div>
-							<div class="catalog__img"><img src="images/samples/catalog/3.png" alt=""></div>
-							<div class="catalog__text">Ремонт и техническое обслуживание автомобилей любых марок.</div>
-						</div>
-						<div class="catalog__item">
-							<div class="catalog__subtitle"><a href="">Стоматологическая клиника Lige </a></div>
-							<div class="catalog__img"><img src="images/samples/catalog/4.png" alt=""></div>
-							<div class="catalog__text">Стоматологическое лечение и челюстно-лицевая хирургия в Венгрии</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-left hidden-lg hidden-md">
-					<div class="center-block centered pad-b-20"><img src="images/samples/banner02.jpg"></div>
-					<div class="panel panel-default no-borders">
-						 <div class="panel-heading blue-head">Информация</div>
-						 <div class="panel-body blue-body">
-								<ul class="menu-list">
-									 <li><a href="#">Карта Парижа</a></li>
-									 <li><a href="#">Славься Париж</a></li>
-									 <li><a href="#">Районы Парижа</a></li>
-									 <li><a href="#">Пригороды Парижа</a></li>
-									 <li><a href="#">Транспорт в Париже</a></li>
-									 <li><a href="#">Аэропорты Парижа</a></li>
-									 <li><a href="#">Практические советы</a></li>
-									 <li><a href="#">Гиды и переводчики</a></li>
-									 <li><a href="#">Транспортные услуги</a></li>
-									 <li><a href="#">Аренда квартир во Франции</a></li>
-									 <li><a href="#">Кулинарные рецепты</a></li>
-								</ul>
-						 </div>
-					</div>
-					<div class="center-block centered pad-b-20"><img src="images/samples/banner03.jpg"></div>
-					<div class="panel panel-default no-borders">
-						 <div class="panel-heading blue-head">Достопримечательности</div>
-						 <div class="panel-body blue-body">
-						 		<div class="places">
-						 			<div class="places__item">
-						 				<div class="places__img"><img src="images/samples/photo1.jpg" alt=""></div>
-						 				<div class="places__text">Парижский Лувр</div>
-						 			</div>
-						 			<div class="places__item">
-						 				<div class="places__img"><img src="images/samples/photo2.jpg" alt=""></div>
-						 				<div class="places__text">Собор Парижской Богоматери</div>
-						 			</div>
-						 		</div>
-								<ul class="menu-list">
-									 <li><a href="#">Стоит посмотреть</a></li>
-									 <li><a href="#">Музеи</a></li>
-									 <li><a href="#">Сады и парки</a></li>
-									 <li><a href="#">Соборы Парижа</a></li>
-									 <li><a href="#">Знаменитые кварталы</a></li>
-									 <li><a href="#">Фото прогулки</a></li>
-								</ul>
-						 </div>
-					</div>
-				</div>
-				<!-- /Mobile show -->
 	
 				<!-- News -->
 				<div class="news section">
@@ -455,12 +380,6 @@
 				<li><a href="">Реклама на сайте</a></li>
 			</ul>
 		</div>
-		<div class="footer__nav footer__nav_hidden hidden-lg hidden-md hidden-sm">
-			<ul>
-				<li><a href="">Пользовательское соглашение</a></li>
-				<li><a href="">Реклама на сайте</a></li>
-			</ul>
-		</div>
 		<div class="footer__text">
 			<p>© "Привет, Париж!" 2001-2016</p>
 			<p>Русские в Париже и Франции, информация, общение, развлечения, чат, форум, знакомства!</p>
@@ -478,16 +397,9 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script>
-		var nav = $('.navbar-nav');
 		$('.mobile-btn').click(function(event) {
 			$(this).toggleClass('mobile-btn_toggle');
-			nav.slideToggle(300);
-		});
-		$(window).on('resize', function() {
-			var windowWidth = $(window).width();
-			if (windowWidth > 991) {
-				nav.removeAttr('style');
-			}
+			$('.navbar-nav').slideToggle(300);
 		});
 	</script>
 </body>

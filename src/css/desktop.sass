@@ -1,0 +1,459 @@
+@font-face
+	font-family: 'Proxima Nova'
+	src: url('../fonts/proxima-nova/Proxima Nova Regular.otf')
+	font-weight: 400
+
+@font-face
+	font-family: 'Proxima Nova'
+	src: url('../fonts/proxima-nova/Proxima Nova Semibold.otf')
+	font-weight: 600
+
+@font-face
+	font-family: 'Proxima Nova'
+	src: url('../fonts/proxima-nova/Proxima Nova Extrabold.otf')
+	font-weight: 900
+
+$font-family-2: 'Proxima Nova', sans-serif
+
+body
+	font-size: 15px
+	font-family: 'Roboto', sans-serif
+
+img
+	max-width: 100%
+
+.logo 
+	padding-left: 40px
+	img 
+		width: 285px
+		height: auto
+
+.header
+	background: #e9f0f7
+	padding-top: 9px
+	padding-bottom: 17px
+	&-banner 
+		float: right
+		text-align: center
+
+	&-links
+		float: right
+		text-align: right
+		font-size: 12px
+		a 
+			margin-left: 5px
+			padding-right: 5px
+
+
+
+
+.button
+	&_yellow
+		font-size: 15px
+		color: white
+		background-color: #fac51c
+		border-radius: 5px
+		padding: 8px 16px
+		text-align: center
+		min-width: 171px
+		&:hover
+			color: white
+			text-decoration: none
+			background-color: darken(#fac51c, 10%)
+
+
+
+.navbar
+	&-collapse 
+		background: #2969b0
+	&-header 
+		background: #2969b0
+	&-nav
+		> li
+			> a
+				font-size: 17px
+				font-weight: 400
+				font-family: $font-family-2
+
+.nav-dop 
+	text-align: right
+
+.nav-dop a 
+	color: #fff
+	margin-left: 10px
+	margin-right: 10px
+	line-height: 50px
+
+.modal-login 
+	background: #fff
+	padding: 20px
+
+.pad-b-20 
+	padding-bottom: 20px
+
+.pad-t-20 
+	padding-top: 20px
+
+.mar-b-20 
+	margin-bottom: 20px
+
+.mar-t-20 
+	margin-top: 20px
+
+.centered 
+	text-align: center
+
+.blue-head 
+	background: #2969b0
+	color: #fff
+
+.blue-body 
+	background: #e9f0f7
+
+.yellow-head 
+	background: #fac51c
+	color: #fff
+
+.yellow-body 
+	background: #fef9e8
+
+.menu-list 
+	padding: 0
+	margin: 0
+
+.menu-list li 
+	list-style: none
+	padding: 0
+	margin: 0
+	font-size: 15px
+
+.menu-list li a 
+	display: block
+	padding-top: 7px
+	padding-bottom: 7px
+
+.no-borders 
+	border: 0!important
+
+.panel
+	&-heading
+		font-family: $font-family-2
+		font-weight: 400
+		font-size: 17px
+		border-radius: 0
+	&-heading, &-body
+		padding: 12.5px 28px
+	&-body
+		padding-bottom: 25px
+
+
+
+
+.places
+	width: 170px
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 15px
+	&__item
+		background-color: white
+		text-align: center
+		padding: 8px 13px 5px
+		margin-bottom: 15px
+	&__img
+		
+	&__text
+		padding-top: 5px
+		font-style: italic
+		font-size: 12px
+		line-height: 13px
+		color: rgba(0,0,0,0.7)
+
+.section
+	position: relative
+	margin-left: 13px
+	margin-right: 13px
+	border-bottom: 1px solid rgba(0,0,0,0.15)
+	padding: 20px 0 65px 28px
+	&:last-of-type
+		border-bottom: none
+	&_zero
+		padding: 0
+	&__title
+		font-size: 17px
+		font-weight: 900
+		color: #252525
+		font-family: $font-family-2
+
+
+
+
+.afisha
+	padding-bottom: 12px
+	&__item
+		position: relative
+		background-position: center
+		background-size: cover
+		padding: 27px 30px 5px 27px
+		color: white
+		min-height: 355px
+	&__mask
+		&:before
+			z-index: 1
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,0.5)
+	&__content
+		float: left
+		z-index: 2
+		position: relative
+		width: 65%
+		padding-right: 25px
+	&__label
+		font-size: 0
+		margin-bottom: 15px
+		span
+			font-size: 12px
+			display: inline-block
+			background-color: #d83321
+			border-radius: 3px
+			padding: 3px 12px
+			margin-right: 6px
+			&:last-of-type
+				margin-right: 0
+	&__date
+		margin-bottom: 20px
+	&__title
+		font-family: $font-family-2
+		font-weight: 900
+		font-size: 31px
+		line-height: 37px
+		letter-spacing: -1.24px
+		margin-bottom: 22px
+	&__text
+		color: rgba(255,255,255,0.6)
+	&__img
+		float: right
+		z-index: 2
+		position: relative
+		width: 35%
+		text-align: right
+
+
+.board
+	&_folder
+		.board
+			&__list
+				li
+					position: relative
+					margin-bottom: 13px
+					.icon-folder
+						position: absolute
+						top: 3px
+						left: 0
+
+				a
+					margin-left: 33px
+	&__head
+		font-size: 0
+		margin-bottom: 40px
+	&__title, &__button
+		display: inline-block
+		vertical-align: middle
+	&__title
+		margin-right: 25px
+	&__item
+		margin-bottom: 22px
+	&__list
+		&:last-of-type
+			margin-bottom: 0
+		ul
+			padding: 0
+		li
+			margin-bottom: 8px
+			font-size: 0
+			&:last-of-type
+				margin-bottom: 0
+			a
+				display: inline-block
+				padding: 0
+				font-size: 15px
+				vertical-align: middle
+	&__subtitle
+		font-family: $font-family-2
+		font-weight: 600
+		color: #252525
+		font-size: 17px
+		margin-bottom: 8px
+	&__counts
+		font-size: 0
+		margin-top: 195px
+		p
+			display: inline-block
+			font-size: 15px
+			color: #cccccc
+			margin: 0 15px 0 0
+			&:last-of-type
+				margin: 0
+
+.news
+	&__head
+		margin-bottom: 10px
+	&__item
+		padding-top: 25px
+		padding-bottom: 25px
+	&__date
+		color: #ccc
+		margin-bottom: 2px
+	&__subtitle
+		margin-bottom: 18px
+	&__text
+		color: #959595
+		line-height: 21px
+
+.nav-line
+	ul
+		font-size: 0
+		padding: 0
+		margin: 0
+	li
+		font-size: 14px
+		list-style: none
+		display: inline-block
+
+
+.catalog
+	&__title
+		color: white
+		background-color: #fac51c
+		font-size: 17px
+		font-family: $font-family-2
+		padding: 12.5px 28px
+	&__item
+		background-color: #fef9e8
+		text-align: center
+		margin-bottom: 15px
+		padding: 20px 35px 32px
+		&:last-of-type
+			margin-bottom: 0
+	&__subtitle
+		margin-bottom: 10px
+	&__img
+		margin-bottom: 17px
+	&__text
+		font-size: 14px
+		font-weight: 300
+
+.footer
+	padding: 50px 15px 20px
+	margin-top: 30px
+	background-color: #e9f0f7
+	text-align: center
+	p
+		margin-bottom: 0
+	&__nav
+		margin-bottom: 30px
+		li
+			font-size: 12px
+			margin-left: 15px
+			margin-right: 15px
+	&__text
+		font-size: 12px
+		line-height: 21px
+		color: #959595
+		margin-bottom: 38px
+	&__counts
+		li
+			margin-left: 6px
+			margin-right: 6px
+		a
+			&:hover
+				opacity: .5
+.icon
+	display: inline-block
+	vertical-align: middle
+
+.color-
+	&gray
+		color: #cccccc
+
+.content
+	padding-left: 0
+	padding-right: 0
+
+.col
+	&-left
+		padding-left: 0
+	&-right
+		padding-right: 0
+
+
+.ads
+	z-index: 1
+	position: absolute
+	right: 0
+	top: 0
+	&-board
+		top: 85px
+		width: 336px
+	&-catalog
+		top: 15px
+		width: 557px
+
+@media (max-width: 1750px)
+	.afisha__item
+		min-height: 415px
+
+@media (max-width: 1580px)
+	.ads
+		&-board
+			width: 255px
+		&-catalog
+			width: 400px
+
+
+
+
+@media (max-width: 1470px)
+	.afisha
+		.col-md-6
+			width: 100%
+		&__item
+			min-height: 1px
+			padding-bottom: 20px
+			margin-bottom: 15px
+	.section
+		padding-left: 0
+		margin-left: 0
+		margin-right: 0
+
+	.panel
+		&-heading
+			font-size: 15px
+			text-align: center
+		&-heading
+			padding-left: 2px
+			padding-right: 2px
+		&-body
+			padding: 10px 15px
+
+	.catalog
+		&__title
+			font-size: 15px
+			text-align: center
+		&__title
+			padding-left: 2px
+			padding-right: 2px
+		&__item
+			padding: 10px 15px
+
+
+@media (max-width: 1280px)
+	.ads
+		&-board
+			width: 180px
+		&-catalog
+			width: 290px

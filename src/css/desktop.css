@@ -1,0 +1,438 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proxima-nova/Proxima Nova Regular.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proxima-nova/Proxima Nova Semibold.otf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proxima-nova/Proxima Nova Extrabold.otf");
+  font-weight: 900; }
+
+body {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif; }
+
+img {
+  max-width: 100%; }
+
+.logo {
+  padding-left: 40px; }
+  .logo img {
+    width: 285px;
+    height: auto; }
+
+.header {
+  background: #e9f0f7;
+  padding-top: 9px;
+  padding-bottom: 17px; }
+  .header-banner {
+    float: right;
+    text-align: center; }
+  .header-links {
+    float: right;
+    text-align: right;
+    font-size: 12px; }
+    .header-links a {
+      margin-left: 5px;
+      padding-right: 5px; }
+
+.button_yellow {
+  font-size: 15px;
+  color: white;
+  background-color: #fac51c;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 8px 16px;
+  text-align: center;
+  min-width: 171px; }
+  .button_yellow:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #deaa05; }
+
+.navbar-collapse {
+  background: #2969b0; }
+
+.navbar-header {
+  background: #2969b0; }
+
+.navbar-nav > li > a {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Proxima Nova", sans-serif; }
+
+.nav-dop {
+  text-align: right; }
+
+.nav-dop a {
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 50px; }
+
+.modal-login {
+  background: #fff;
+  padding: 20px; }
+
+.pad-b-20 {
+  padding-bottom: 20px; }
+
+.pad-t-20 {
+  padding-top: 20px; }
+
+.mar-b-20 {
+  margin-bottom: 20px; }
+
+.mar-t-20 {
+  margin-top: 20px; }
+
+.centered {
+  text-align: center; }
+
+.blue-head {
+  background: #2969b0;
+  color: #fff; }
+
+.blue-body {
+  background: #e9f0f7; }
+
+.yellow-head {
+  background: #fac51c;
+  color: #fff; }
+
+.yellow-body {
+  background: #fef9e8; }
+
+.menu-list {
+  padding: 0;
+  margin: 0; }
+
+.menu-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px; }
+
+.menu-list li a {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px; }
+
+.no-borders {
+  border: 0 !important; }
+
+.panel-heading {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  -webkit-border-radius: 0;
+          border-radius: 0; }
+
+.panel-heading, .panel-body {
+  padding: 12.5px 28px; }
+
+.panel-body {
+  padding-bottom: 25px; }
+
+.places {
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px; }
+  .places__item {
+    background-color: white;
+    text-align: center;
+    padding: 8px 13px 5px;
+    margin-bottom: 15px; }
+  .places__text {
+    padding-top: 5px;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.7); }
+
+.section {
+  position: relative;
+  margin-left: 13px;
+  margin-right: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 20px 0 65px 28px; }
+  .section:last-of-type {
+    border-bottom: none; }
+  .section_zero {
+    padding: 0; }
+  .section__title {
+    font-size: 17px;
+    font-weight: 900;
+    color: #252525;
+    font-family: "Proxima Nova", sans-serif; }
+
+.afisha {
+  padding-bottom: 12px; }
+  .afisha__item {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    padding: 27px 30px 5px 27px;
+    color: white;
+    min-height: 355px; }
+  .afisha__mask:before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .afisha__content {
+    float: left;
+    z-index: 2;
+    position: relative;
+    width: 65%;
+    padding-right: 25px; }
+  .afisha__label {
+    font-size: 0;
+    margin-bottom: 15px; }
+    .afisha__label span {
+      font-size: 12px;
+      display: inline-block;
+      background-color: #d83321;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      padding: 3px 12px;
+      margin-right: 6px; }
+      .afisha__label span:last-of-type {
+        margin-right: 0; }
+  .afisha__date {
+    margin-bottom: 20px; }
+  .afisha__title {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 900;
+    font-size: 31px;
+    line-height: 37px;
+    letter-spacing: -1.24px;
+    margin-bottom: 22px; }
+  .afisha__text {
+    color: rgba(255, 255, 255, 0.6); }
+  .afisha__img {
+    float: right;
+    z-index: 2;
+    position: relative;
+    width: 35%;
+    text-align: right; }
+
+.board_folder .board__list li {
+  position: relative;
+  margin-bottom: 13px; }
+  .board_folder .board__list li .icon-folder {
+    position: absolute;
+    top: 3px;
+    left: 0; }
+
+.board_folder .board__list a {
+  margin-left: 33px; }
+
+.board__head {
+  font-size: 0;
+  margin-bottom: 40px; }
+
+.board__title, .board__button {
+  display: inline-block;
+  vertical-align: middle; }
+
+.board__title {
+  margin-right: 25px; }
+
+.board__item {
+  margin-bottom: 22px; }
+
+.board__list:last-of-type {
+  margin-bottom: 0; }
+
+.board__list ul {
+  padding: 0; }
+
+.board__list li {
+  margin-bottom: 8px;
+  font-size: 0; }
+  .board__list li:last-of-type {
+    margin-bottom: 0; }
+  .board__list li a {
+    display: inline-block;
+    padding: 0;
+    font-size: 15px;
+    vertical-align: middle; }
+
+.board__subtitle {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  color: #252525;
+  font-size: 17px;
+  margin-bottom: 8px; }
+
+.board__counts {
+  font-size: 0;
+  margin-top: 195px; }
+  .board__counts p {
+    display: inline-block;
+    font-size: 15px;
+    color: #cccccc;
+    margin: 0 15px 0 0; }
+    .board__counts p:last-of-type {
+      margin: 0; }
+
+.news__head {
+  margin-bottom: 10px; }
+
+.news__item {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+.news__date {
+  color: #ccc;
+  margin-bottom: 2px; }
+
+.news__subtitle {
+  margin-bottom: 18px; }
+
+.news__text {
+  color: #959595;
+  line-height: 21px; }
+
+.nav-line ul {
+  font-size: 0;
+  padding: 0;
+  margin: 0; }
+
+.nav-line li {
+  font-size: 14px;
+  list-style: none;
+  display: inline-block; }
+
+.catalog__title {
+  color: white;
+  background-color: #fac51c;
+  font-size: 17px;
+  font-family: "Proxima Nova", sans-serif;
+  padding: 12.5px 28px; }
+
+.catalog__item {
+  background-color: #fef9e8;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 20px 35px 32px; }
+  .catalog__item:last-of-type {
+    margin-bottom: 0; }
+
+.catalog__subtitle {
+  margin-bottom: 10px; }
+
+.catalog__img {
+  margin-bottom: 17px; }
+
+.catalog__text {
+  font-size: 14px;
+  font-weight: 300; }
+
+.footer {
+  padding: 50px 15px 20px;
+  margin-top: 30px;
+  background-color: #e9f0f7;
+  text-align: center; }
+  .footer p {
+    margin-bottom: 0; }
+  .footer__nav {
+    margin-bottom: 30px; }
+    .footer__nav li {
+      font-size: 12px;
+      margin-left: 15px;
+      margin-right: 15px; }
+  .footer__text {
+    font-size: 12px;
+    line-height: 21px;
+    color: #959595;
+    margin-bottom: 38px; }
+  .footer__counts li {
+    margin-left: 6px;
+    margin-right: 6px; }
+  .footer__counts a:hover {
+    opacity: .5; }
+
+.icon {
+  display: inline-block;
+  vertical-align: middle; }
+
+.color-gray {
+  color: #cccccc; }
+
+.content {
+  padding-left: 0;
+  padding-right: 0; }
+
+.col-left {
+  padding-left: 0; }
+
+.col-right {
+  padding-right: 0; }
+
+.ads {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .ads-board {
+    top: 85px;
+    width: 336px; }
+  .ads-catalog {
+    top: 15px;
+    width: 557px; }
+
+@media (max-width: 1750px) {
+  .afisha__item {
+    min-height: 415px; } }
+
+@media (max-width: 1580px) {
+  .ads-board {
+    width: 255px; }
+  .ads-catalog {
+    width: 400px; } }
+
+@media (max-width: 1470px) {
+  .afisha .col-md-6 {
+    width: 100%; }
+  .afisha__item {
+    min-height: 1px;
+    padding-bottom: 20px;
+    margin-bottom: 15px; }
+  .section {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0; }
+  .panel-heading {
+    font-size: 15px;
+    text-align: center; }
+  .panel-heading {
+    padding-left: 2px;
+    padding-right: 2px; }
+  .panel-body {
+    padding: 10px 15px; }
+  .catalog__title {
+    font-size: 15px;
+    text-align: center; }
+  .catalog__title {
+    padding-left: 2px;
+    padding-right: 2px; }
+  .catalog__item {
+    padding: 10px 15px; } }
+
+@media (max-width: 1280px) {
+  .ads-board {
+    width: 180px; }
+  .ads-catalog {
+    width: 290px; } }
